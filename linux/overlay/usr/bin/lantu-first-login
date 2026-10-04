@@ -1,0 +1,32 @@
+#!/bin/sh
+set -eu
+state="${XDG_CONFIG_HOME:-$HOME/.config}/lantu-desktop-initialized"
+[ -e "$state" ] && exit 0
+mkdir -p "$(dirname "$state")"
+attempt=0
+while [ "$attempt" -lt 25 ]; do
+  if /usr/lib/qt6/bin/qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript '
+    var screens = desktops();
+    for (var i = 0; i < screens.length; i++) {
+      screens[i].wallpaperPlugin = "org.kde.image";
+      screens[i].currentConfigGroup = ["Wallpaper", "org.kde.image", "General"];
+      screens[i].writeConfig("Image", "file:///usr/share/wallpapers/LantuOS/wallpaper.png");
+    }
+    var allPanels = panels();
+    for (var p = 0; p < allPanels.length; p++) {
+      var items = allPanels[p].widgets();
+      for (var j = 0; j < items.length; j++) {
+        if (items[j].type == "org.kde.plasma.icontasks") {
+          items[j].currentConfigGroup = ["General"];
+          items[j].writeConfig("launchers", ["applications:firefox-esr.desktop", "applications:org.kde.dolphin.desktop", "applications:lantu-desktop.desktop", "applications:systemsettings.desktop"]);
+        }
+      }
+    }
+  ' >/dev/null 2>&1; then
+    touch "$state"
+    exit 0
+  fi
+  attempt=$((attempt + 1))
+  sleep 1
+done
+exit 0

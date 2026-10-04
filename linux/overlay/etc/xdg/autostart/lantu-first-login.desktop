@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Lantu OS first login
+Exec=/usr/bin/lantu-first-login
+OnlyShowIn=KDE;
+NoDisplay=true
+X-KDE-autostart-phase=2

@@ -1,0 +1,12 @@
+[General]
+ColorScheme=BreezeLight
+font=Noto Sans CJK SC,10,-1,5,50,0,0,0,0,0
+
+[KDE]
+SingleClick=false
+
+[Icons]
+Theme=breeze
+
+[Locale]
+Language=zh_CN

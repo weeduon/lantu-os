@@ -1,0 +1,30 @@
+---
+componentName: lantu
+welcomeStyleCalamares: true
+welcomeExpandingLogo: true
+windowExpanding: normal
+windowSize: 800px,580px
+windowPlacement: center
+strings:
+    productName: "澜图 OS"
+    shortProductName: "澜图 OS"
+    version: "0.2.0-preview"
+    shortVersion: "0.2"
+    versionedName: "澜图 OS 0.2.0-preview"
+    shortVersionedName: "澜图 OS 0.2"
+    bootloaderEntryName: "Lantu OS"
+    productUrl: "https://github.com/weeduon/lantu-os"
+    supportUrl: "https://github.com/weeduon/lantu-os/issues"
+    knownIssuesUrl: "https://github.com/weeduon/lantu-os/blob/main/docs/STATUS.md"
+    releaseNotesUrl: "https://github.com/weeduon/lantu-os/blob/main/CHANGELOG.md"
+sidebar: widget
+navigation: widget
+images:
+    productLogo: "lantu-os-logo.png"
+    productIcon: "lantu-os-logo.png"
+    productWelcome: "lantu-os-logo.png"
+style:
+    SidebarBackground: "#123C76"
+    SidebarText: "#FFFFFF"
+    SidebarTextCurrent: "#FFFFFF"
+    SidebarBackgroundCurrent: "#205796"

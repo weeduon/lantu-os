@@ -1,0 +1,16 @@
+.DS_Store
+node_modules
+dist/
+__pycache__/
+*.pyc
+*.iso
+*.iso.*
+*.qcow2
+*.log
+/release/
+/downloads/
+/linux/web/
+/source-packages/
+.env
+.env.*
+!.env.example

@@ -1,0 +1,5 @@
+NAME="澜图 OS"
+VERSION="0.2.0-preview"
+BASE="Debian GNU/Linux 13 KDE Live"
+ARCH="amd64"
+AI_STATUS="Interface demonstration; no model bundled"

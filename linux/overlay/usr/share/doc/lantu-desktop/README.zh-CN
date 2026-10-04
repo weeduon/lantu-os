@@ -1,0 +1,10 @@
+澜图 OS 0.2.0-preview
+
+基于 Debian GNU/Linux 13 与 KDE Plasma 的中文桌面预览版。
+Firefox、音量、网络、电池、电源和文件管理使用真实 Linux 组件。
+工作台内文件与 AI 摘要为示例，未连接模型或扫描用户文档。
+安装器沿用 Calamares，安装前检查目标磁盘并备份数据。
+真机兼容性及完整安装重启验证仍待完成。
+本项目源码副本位于同目录 source/，许可证见 COPYING。
+第三方组件保留各自许可证，见 /usr/share/doc/*/copyright。
+公开源码：https://github.com/weeduon/lantu-os

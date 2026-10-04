@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=澜图 OS 工作台
+Name[en_US]=Lantu OS Workbench
+Comment=中文 AI 工作台预览与电脑设置入口
+Exec=/usr/bin/lantu-desktop
+Icon=lantu-os
+Terminal=false
+Categories=Utility;Office;
+StartupNotify=true
