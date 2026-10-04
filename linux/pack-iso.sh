@@ -18,7 +18,7 @@ done
 args+=(-map "$BUILD_DIR/iso/md5sum.txt" /md5sum.txt)
 while IFS= read -r -d '' file; do
   args+=(-map "$file" "${file#"$BUILD_DIR/iso"}")
-done < <(find "$BUILD_DIR/iso/boot/grub" "$BUILD_DIR/iso/isolinux" -type f \( -name '*.cfg' -o -name '*.conf' \) -print0)
+done < <(find "$BUILD_DIR/iso/boot/grub" "$BUILD_DIR/iso/isolinux" -type f \( -name '*.cfg' -o -name '*.conf' -o -name 'theme.txt' \) -print0)
 # Keep the original boot image objects. Replacing the whole ISO tree loses the
 # association used by xorriso's boot replay for this Debian hybrid image.
 xorriso "${args[@]}" -boot_image any replay -volid LANTU_OS_02 -commit

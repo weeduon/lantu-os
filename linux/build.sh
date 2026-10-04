@@ -88,7 +88,7 @@ rm -f "$ROOT/var/lib/dbus/machine-id"
 ln -s /etc/machine-id "$ROOT/var/lib/dbus/machine-id"
 cleanup
 trap - EXIT
-find "$BUILD_DIR/iso/boot/grub" "$BUILD_DIR/iso/isolinux" -type f \( -name '*.cfg' -o -name '*.conf' \) -print0 | xargs -0 -r sed -i -e 's/ locales=zh_CN.UTF-8 keyboard-layouts=us timezone=Asia\/Shanghai//g' -e 's/boot=live/boot=live locales=zh_CN.UTF-8 keyboard-layouts=us timezone=Asia\/Shanghai/g' -e 's/Debian GNU\/Linux Live/Lantu OS 0.2 (Debian 13)/g' -e 's/Han Desktop (Debian 13)/Lantu OS 0.2 (Debian 13)/g'
+find "$BUILD_DIR/iso/boot/grub" "$BUILD_DIR/iso/isolinux" -type f \( -name '*.cfg' -o -name '*.conf' -o -name 'theme.txt' \) -print0 | xargs -0 -r sed -i -e 's/ locales=zh_CN.UTF-8 keyboard-layouts=us timezone=Asia\/Shanghai//g' -e 's/boot=live/boot=live locales=zh_CN.UTF-8 keyboard-layouts=us timezone=Asia\/Shanghai/g' -e 's/Debian GNU\/Linux Live/Lantu OS 0.2 (Debian 13)/g' -e 's/Han Desktop (Debian 13)/Lantu OS 0.2 (Debian 13)/g' -e 's/Live system/Lantu OS Live/g' -e 's/Live Boot Menu with GRUB/Lantu OS 0.2 - Debian 13/g' -e 's/Start installer/Debian upstream installer/g' -e 's/Advanced install options/Advanced Debian install options/g'
 rm -f "$BUILD_DIR/iso/live/filesystem.squashfs"
 mksquashfs "$ROOT" "$BUILD_DIR/iso/live/filesystem.squashfs" -comp zstd -Xcompression-level 6 -b 1M -processors 4 -noappend
 cp "$DESTINATION/packages.tsv" "$BUILD_DIR/iso/live/filesystem.packages"

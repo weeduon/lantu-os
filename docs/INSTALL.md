@@ -11,6 +11,8 @@
 
 Live 试用沿用 Debian Live 账户 `user` / 密码 `live`，这不是安装后的账户；安装过程中创建自己的账户。Live 会话通常不保留重启前的数据。
 
+安装澜图请先进入 `Lantu OS Live`，再运行桌面中的 Calamares 安装器。引导菜单保留了上游 Debian 安装入口，它不作为本项目的推荐安装路径。启动背景保留 Debian 上游图案，以注明系统基础。
+
 本次镜像保留上游 BIOS / UEFI 混合启动结构。Secure Boot、双系统、磁盘加密、真实 Wi-Fi、显卡、打印机、休眠和电池续航需要逐机验证。不要据此承诺所有 x86 电脑兼容。
 
 - [Rufus](https://rufus.ie/zh/)
