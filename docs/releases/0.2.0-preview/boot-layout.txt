@@ -1,0 +1,54 @@
+xorriso 1.5.6 : RockRidge filesystem manipulator, libburnia project.
+
+xorriso : NOTE : ISO image bears MBR with  -boot_image any partition_offset=16
+xorriso : NOTE : Loading ISO image tree from LBA 0
+xorriso : UPDATE :    1404 nodes read in 1 seconds
+xorriso : NOTE : Detected El-Torito boot information which currently is set to be discarded
+Drive current: -indev 'release/lantu-os-0.2.0-preview-amd64.iso'
+Media current: stdio file, overwriteable
+Media status : is written , is appendable
+Boot record  : El Torito , MBR isohybrid cyl-align-off GPT APM
+Media summary: 1 session, 2146236 data blocks, 4192m data,  120g free
+Volume id    : 'LANTU_OS_02'
+El Torito catalog  : 1095  1
+El Torito cat path : /isolinux/boot.cat
+El Torito images   :   N  Pltf  B   Emul  Ld_seg  Hdpt  Ldsiz         LBA
+El Torito boot img :   1  BIOS  y   none  0x0000  0x00      4        2760
+El Torito boot img :   2  UEFI  y   none  0x0000  0x00   6656        1096
+El Torito img path :   1  /isolinux/isolinux.bin
+El Torito img opts :   1  boot-info-table isohybrid-suitable
+El Torito img path :   2  /boot/grub/efi.img
+System area options: 0x00000202
+System area summary: MBR isohybrid cyl-align-off GPT APM
+ISO image size/512 : 8585136
+Partition offset   : 16
+MBR heads per cyl  : 0
+MBR secs per head  : 0
+MBR partition table:   N Status  Type        Start       Blocks
+MBR partition      :   1   0x80  0x00           64      8585072
+MBR partition      :   2   0x00  0xef         4384         6656
+MBR partition path :   2  /boot/grub/efi.img
+GPT                :   N  Info
+GPT disk GUID      :      6388c1bc5b70484f9a0174f711d87320
+GPT entry array    :      12  208  overlapping
+GPT lba range      :      64  8585082  8585135
+GPT partition name :   1  490053004f00480079006200720069006400
+GPT partname local :   1  ISOHybrid
+GPT partition GUID :   1  6388c1bc5b70484f9a0074f711d87320
+GPT type GUID      :   1  a2a0d0ebe5b9334487c068b6b72699c7
+GPT partition flags:   1  0x1000000000000001
+GPT start and size :   1  64  8585016
+GPT partition name :   2  490053004f004800790062007200690064003100
+GPT partname local :   2  ISOHybrid1
+GPT partition GUID :   2  6388c1bc5b70484f9a0374f711d87320
+GPT type GUID      :   2  a2a0d0ebe5b9334487c068b6b72699c7
+GPT partition flags:   2  0x1000000000000001
+GPT start and size :   2  4384  6656
+GPT partition path :   2  /boot/grub/efi.img
+APM                :   N  Info
+APM block size     :      2048
+APM gap fillers    :      0
+APM partition name :   1  EFI
+APM partition type :   1  Apple_HFS
+APM start and size :   1  1096  1664
+APM partition path :   1  /boot/grub/efi.img

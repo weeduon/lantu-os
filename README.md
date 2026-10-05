@@ -48,6 +48,8 @@ bash scripts/prepare-iso.sh
 sudo bash linux/build.sh "$PWD/downloads/debian-live-13.6.0-amd64-kde.iso" "$PWD/release"
 ```
 
+本次镜像构建结果、校验和与未完成测试见 [0.2 验证记录](docs/RELEASE-VALIDATION.md)。
+
 完整步骤见 [构建说明](docs/BUILD.md)、[试用与安装](docs/INSTALL.md)、[验证状态](docs/STATUS.md)。ISO 和构建缓存不存入 Git。仓库内的构建配方会生成镜像与 SHA256SUMS；不要把 README 中的功能列表当作真机兼容性认证。
 
 ## 项目结构

@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0-preview",
+  "build_date": "2026-10-05",
+  "architecture": "amd64",
+  "source_commit": "2a3f8ac8f83bb5ab913582067cf1ea04604f2e11",
+  "iso": "lantu-os-0.2.0-preview-amd64.iso",
+  "iso_size_bytes": 4395958272,
+  "iso_sha256": "d5f0f3e986bcd6523d7b5cded76e548a247ae74299419e26644aff18ae82d34e",
+  "source_archive": "lantu-os-0.2.0-preview-source.tar.gz",
+  "source_archive_sha256": "1a67db662a7c863cf27723bc95ccb6775193327957767cef155c4d8c896496af",
+  "upstream_iso_sha256": "426984f7edf034f4cd49f6218e706a6086588359d34fa0328676451b4a679639",
+  "installation_reboot_test": "not_completed",
+  "ai_model_integration": "demonstration_only"
+}

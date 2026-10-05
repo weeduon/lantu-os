@@ -2,7 +2,7 @@
 
 ## 0.2.0-preview
 
-本次变更：名称和 A2 Logo 进入原生工作台、菜单、系统显示名称及安装器品牌；构建配方和源码整理为公开仓库。最终构建和测试结果将记录在同目录 `RELEASE-VALIDATION.md`。
+本次变更：名称和 A2 Logo 进入原生工作台、菜单、系统显示名称及安装器品牌；构建配方和源码整理为公开仓库。最终构建和测试结果见 [RELEASE-VALIDATION.md](RELEASE-VALIDATION.md)。
 
 ## 继承自 0.1 的验证记录
 
